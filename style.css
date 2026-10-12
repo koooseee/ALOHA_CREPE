@@ -38,6 +38,12 @@ a {
   gap: 20px;
   padding: 18px 7%;
   background: #fffdf8;
+
+  /* スクロールしても上部に固定 */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
 }
 
 .logo {
