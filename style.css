@@ -40,10 +40,11 @@ a {
   background: #fffdf8;
 
   /* スクロールしても上部に固定 */
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
-
 }
 
 .logo {
