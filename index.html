@@ -83,5 +83,28 @@
   <footer class="site-footer">
     <p>© 2026 ALOHA CREPE EE4</p>
   </footer>
+
+<script>
+  const header = document.querySelector('.site-header');
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY < 100) {
+      // トップ付近ではヘッダーを隠す
+      header.classList.remove('show');
+    } else if (currentScrollY < lastScrollY) {
+      // 上方向にスクロールしたら表示
+      header.classList.add('show');
+    } else {
+      // 下方向にスクロールしたら隠す
+      header.classList.remove('show');
+    }
+
+    lastScrollY = currentScrollY;
+  });
+</script>
+  
 </body>
 </html>
