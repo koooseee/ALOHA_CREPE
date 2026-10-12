@@ -49,6 +49,11 @@ a {
   transition: transform 0.3s ease;
 }
 
+/* 表示するヘッダー */
+.site-header.show {
+  transform: translateY(0);
+}
+
 .logo {
   color: var(--green);
   font-size: 1.2rem;
